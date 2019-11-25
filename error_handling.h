@@ -15,7 +15,7 @@ void die(char * msg)
 {
 	char error_message[100];
 	strcpy(error_message,"[!!] Fatal Error ");
-	strcat(error_message,msg,83);
+	strcat(error_message,msg);
 	perror(error_message);
 	exit(1); //EXIT_FAILURE
 }
